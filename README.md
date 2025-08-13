@@ -1,15 +1,22 @@
-# Pywebscraper
+# TaskNestAPI
 
-## Description
+## 🌟 Description
+
 Pywebscraper is a Python-based web scraping project designed to extract and store structured data from websites into a PostgreSQL database. It is built with scalability, maintainability, and testing in mind, making it suitable for both small experiments and production-level scraping tasks.
 
-## Purpose
+---
+
+## 🎯 Purpose
+
 The main goals of this project are:
 - To demonstrate how to build a clean and modular Python web scraping pipeline.
 - To show how to integrate Python scraping code with a PostgreSQL database.
 - To provide a ready-to-use project structure that supports testing and containerization.
 
-## Technologies Used
+---
+
+## 🛠️ Technologies Used
+
 - **Python 3.11+**
 - **PostgreSQL** (local or Docker)
 - **SQLAlchemy** (ORM)
@@ -18,8 +25,12 @@ The main goals of this project are:
 - **pytest** (testing framework)
 - **Docker** & **Docker Compose** (optional containerization)
 
-## Installation Guide
+---
+
+## 🛠️ Installation Guidance
+
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/abramdarmaputra/Pywebscraper.git
    cd Pywebscraper
@@ -73,7 +84,9 @@ The main goals of this project are:
    python -m src.main --create-tables --pages 3
    ```
 
-## Directory Structure
+---
+
+## 📂 Directory Structure
 
 ```
 Pywebscraper/
@@ -101,16 +114,17 @@ Pywebscraper/
 └── README.md
 ```
 
-## Testing
+---
+
+## 🧪 Testing
 
 Run tests from the project root:
 
 ```bash
 pytest -q
 ```
-
-## License
-
-```
-This project is licensed under the MIT License.
 ---
+
+## 📝 License
+
+This project is licensed under the MIT License.
