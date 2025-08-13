@@ -82,7 +82,7 @@ The main goals of this project are:
 
 ## 📂 Directory Structure
 
-   ```bash
+```bash
    Pywebscraper/
    │
    ├── src/                      # Main application code
