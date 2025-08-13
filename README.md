@@ -68,7 +68,7 @@ The main goals of this project are:
    
    Create a `.env` file:
 
-   ```bash
+   ```sql
    DATABASE_URL=postgresql://scraper_user:scrape_password_@localhost:5432/scraper_db
    BASE_URL=https://quotes.toscrape.com
    PAGES=3
@@ -82,30 +82,30 @@ The main goals of this project are:
 
 ## 📂 Directory Structure
 
-```bash
-Pywebscraper/
-│
-├── src/                      # Main application code
-│   ├── __init__.py
-│   ├── config.py
-│   ├── db.py
-│   ├── models.py
-│   ├── parser.py
-│   ├── scraper.py
-│   └── main.py
-│
-├── tests/                    # Unit & integration tests
-│   ├── __init__.py
-│   ├── test_parser.py
-│   ├── test_scraper.py
-│   └── test_db.py
-│
-├── requirements.txt
-├── pytest.ini
-├── .env
-├── Dockerfile
-├── docker-compose.yml
-└── README.md
+   ```bash
+   Pywebscraper/
+   │
+   ├── src/                      # Main application code
+   │   ├── __init__.py
+   │   ├── config.py
+   │   ├── db.py
+   │   ├── models.py
+   │   ├── parser.py
+   │   ├── scraper.py
+   │   └── main.py
+   │
+   ├── tests/                    # Unit & integration tests
+   │   ├── __init__.py
+   │   ├── test_parser.py
+   │   ├── test_scraper.py
+   │   └── test_db.py
+   │
+   ├── requirements.txt
+   ├── pytest.ini
+   ├── .env
+   ├── Dockerfile
+   ├── docker-compose.yml
+   └── README.md
 
 ---
 
@@ -113,12 +113,12 @@ Pywebscraper/
 
 Run tests from the project root:
 
-```bash
-pytest -q
+   ```bash
+   pytest -q
 
 ---
 
 ## 📝 License
 
-```bash
-This project is licensed under the MIT License.
+   ```bash
+   This project is licensed under the MIT License.
