@@ -29,8 +29,8 @@ The main goals of this project are:
 
    ```bash
    python -m venv .venv
-   source .venv/bin/activate    # Linux / Mac
-   .venv\Scripts\activate       # Windows
+   source .venv/bin/activate     # Linux / Mac
+   .venv\Scripts\activate        # Windows
    ```
 
 3. **Install dependencies**
@@ -44,7 +44,7 @@ The main goals of this project are:
    * Local:
 
      ```sql
-     CREATE ROLE scraper_user WITH LOGIN PASSWORD 'scraper_password';
+     CREATE ROLE scraper_user WITH LOGIN PASSWORD 'scrape_password';
      CREATE DATABASE scraper_db OWNER scraper_user;
      GRANT ALL PRIVILEGES ON DATABASE scraper_db TO scraper_user;
      ```
@@ -53,7 +53,7 @@ The main goals of this project are:
      ```bash
      docker run -d --name pg \
        -e POSTGRES_USER=scraper_user \
-       -e POSTGRES_PASSWORD=scraper_password \
+       -e POSTGRES_PASSWORD=scrape_password \
        -e POSTGRES_DB=scraper_db \
        -p 5432:5432 postgres:16
      ```
@@ -62,7 +62,7 @@ The main goals of this project are:
    Create a `.env` file:
 
    ```
-   DATABASE_URL=postgresql://scraper_user:scraper_password@<host>:5432/scraper_db
+   DATABASE_URL=postgresql://scraper_user:scrape_password_@localhost:5432/scraper_db
    BASE_URL=https://quotes.toscrape.com
    PAGES=3
    ```
@@ -78,7 +78,7 @@ The main goals of this project are:
 ```
 Pywebscraper/
 │
-├── src/                        # Main application code
+├── src/                         # Main application code
 │   ├── __init__.py
 │   ├── config.py
 │   ├── db.py
@@ -87,7 +87,7 @@ Pywebscraper/
 │   ├── scraper.py
 │   └── main.py
 │
-├── tests/                      # Unit & integration tests
+├── tests/                       # Unit & integration tests
 │   ├── __init__.py
 │   ├── test_parser.py
 │   ├── test_scraper.py
@@ -111,4 +111,6 @@ pytest -q
 
 ## License
 
+```
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+---
