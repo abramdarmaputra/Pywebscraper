@@ -1,0 +1,31 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.venv/
+
+# Testing cache
+.pytest_cache/
+
+# Wheels / local packages
+wheels/
+
+# Environment variables
+.env
+
+# IDE/editor config
+.vscode/
+.idea/
+
+# Data output (optional)
+data/
+*.csv
+*.json
+
+# OS files
+.DS_Store
+Thumbs.db
