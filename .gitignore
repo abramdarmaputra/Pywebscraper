@@ -29,3 +29,6 @@ data/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Docker Postgresql connect
+docker-compose.yml
